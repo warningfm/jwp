@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="rbt" />
+<meta name="author" content="rbt" />
+<meta name="owner" content="rbt" />
+<title>Bintang Tenggara - Live Streaming</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: url(tpl/images/bgr_streaming.gif);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000000;
+}
+.judul {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link href="https://warningfm.github.io/v3/css/vp.css?build=13150" type="text/css" rel="stylesheet">
+<script src="https://warningfm.github.io/v3/js/main.46aca9ba.js?build=13150"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" type="text/css" rel="stylesheet">
+<script>
+$( document ).ready(function() {
+$.kast({
+        host: 'asv.alhastream.com',
+        port: 3310,
+        version: 2,
+	protocol: 'https',
+	directStreamURL: 'https://asv.alhastream.com:3350/rbtfm',
+	colors: 'dynamic',
+	theme: 'dark',
+        container: '#new_player',
+        autoPlay: false,
+        startTemplate: 'maximized',
+	statusBar: false,
+	played: false,
+        mobileCare: false,
+	onPause: function (audio) { audio.load() }
+    })
+});
+</script>
+<style>
+#new_player {margin: 20px 0;}
+.kast-primary-cyan #kast-top, .kast-primary-cyan.kast-colored .kast-top-content { background-color: #0050ac !important; }
+.kast-accent-yellow #kast-play { background: #f59320 !important; }
+
+</style>
+</head>
+<body>
+<div>
+    <div style="background: #0039ac;height: 30px;padding-bottom:6px;margin-bottom:10px; border-bottom: 2px solid #f59320;">&nbsp;</div>
+    <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj7DkK0S8weL5arnSdQT8_JL7wEqayAd6UCgKe3Bll60laE32qxXCDX_85kRoatV2VMwEs0-gs5W8AKCeCDnrCrD4BKwxmY0f7bw6lFTsaCFrTModZLQiLRtxHe9H-qlL6Yx_u0q96lxkVBIzhS54KgCNOly5hwpC8ohyphenhyphen1_jRvFF1B7zHLOfT66kIDWEtT/s1600/rbtfm_logo.png" width="270" height="70" border="0" alt="">    
+    <div align='center' id='new_player'></div>
+    </center>
+</div>
+
+
+<table width="100%" border="0" cellspacing="1" cellpadding="1" style="border-top: 2px solid #09a68d">
+  <tr>
+    
+  </tr>
+</table>
+</body>
+</html>
 
