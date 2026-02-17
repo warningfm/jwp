@@ -14,7 +14,7 @@
 			enable_cors: false,
 			cors: "https://cors.mediastreaming.it",			
 			artwork: true,
-            logo: "img/logo.jpg",
+            logo: "https://warningfm.github.io/v3/img/Dx8y31W.jpg",
 			servertitle: "My Radio Title", //For Shoutcast v1 server
             show_listeners: false,    
             src: "",
